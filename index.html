@@ -19,13 +19,11 @@
     <meta name="twitter:description" content="24/7 emergency plumbing services in Broward County & surroundings. Expert plumbers for repairs, installations, and maintenance. Same-day service with lifetime warranty.">
     <meta name="twitter:image" content="https://plumbing24service.com/img/logo.webp">
 
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     <link rel="dns-prefetch" href="https://www.google.com">
     
-    <link rel="stylesheet" href="fonts/css/all.min.css">
+    <link rel="stylesheet" href="fonts/css/all.min.css?v=2">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
 
     <style>
       .review-text {
@@ -39,9 +37,6 @@
         .review-text { -webkit-line-clamp: 4; }
       }
     </style>
-
-    <link rel="preload" as="image" href="img/hero-bg.webp"
-      media="(min-width: 768px)" importance="high">
 
     <script type="application/ld+json">
     {
@@ -1694,30 +1689,9 @@
             <i class="fas fa-phone-alt text-3xl"></i>
           </a>
 
-          <script src="scripts/script.js"></script>
+          <script src="scripts/script.js?v=2"></script>
           <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Progressive image loading for hero section
-            const hero = document.querySelector('.hero');
-            const isMobile = window.innerWidth < 768;
-
-            function loadBackgroundImage(imageUrl) {
-                return new Promise((resolve, reject) => {
-                    const img = new Image();
-                    img.src = imageUrl;
-                    img.onload = () => {
-                        hero.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${imageUrl}')`;
-                        hero.style.backgroundSize = 'cover';
-                        hero.style.backgroundPosition = 'center';
-                        resolve();
-                    };
-                    img.onerror = reject;
-                });
-            }
-
-            const imageUrl = isMobile ? 'img/hero-bg-mobile.webp' : 'img/hero-bg.webp';
-            loadBackgroundImage(imageUrl).catch(err => console.error('Failed to load background image:', err));
-
             // Toast helper
             function showToast(el, duration) {
                 el.style.opacity = '1';
@@ -1809,6 +1783,6 @@
             });
         });
       </script>
-      <script src="js/carousel.js"></script>
+      <script src="js/carousel.js?v=2"></script>
         </body>
       </html>
