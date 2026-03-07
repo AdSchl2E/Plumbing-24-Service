@@ -1,9 +1,12 @@
 ---
-title: "Water Conservation Tips for Broward County Homeowners: Save Money & Protect Our Water Supply"
+title: Water Conservation Tips for Broward County Homeowners - Save Money & Protect Our Water Supply
+slug: water-conservation-tips
 date: 2025-09-15
-author: "Plumbing 24 Service Inc"
-category: "Water Conservation"
-image: "../img/blog/water-conservation.webp"
+author: Plumbing 24 Service
+category: Conservation
+image: water-conservation.webp
+excerpt: In Broward County, water conservation is essential for protecting our water resources and saving money. Discover practical tips to reduce your water usage and contribute to a sustainable future.
+readTime: 12
 ---
 
 # Water Conservation Tips for Broward County Homeowners: Save Money & Protect Our Water Supply

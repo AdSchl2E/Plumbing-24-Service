@@ -2,8 +2,8 @@
 title: The Importance of Backflow Prevention in Broward County Plumbing
 slug: backflow-prevention-importance
 date: 2025-07-01
-author: Plumbing 24 Service Inc
-category: Plumbing Safety
+author: Plumbing 24 Service
+category: Safety
 image: backflow-prevention.webp
 excerpt: Backflow prevention is crucial for safeguarding your home's water supply. Learn what backflow is, why it's a concern in Broward County, and how a professional plumber can help.
 readTime: 7

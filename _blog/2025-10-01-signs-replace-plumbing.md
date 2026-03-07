@@ -1,9 +1,12 @@
 ---
-title: "7 Signs You Need to Replace Your Home's Plumbing System in Broward County"
+title: 7 Signs You Need to Replace Your Home's Plumbing System in Broward County
+slug: signs-replace-plumbing
 date: 2025-10-01
-author: "Plumbing 24 Service Inc"
-category: "Plumbing Maintenance"
-image: "../img/blog/old-pipes.webp"
+author: Plumbing 24 Service
+category: Maintenance
+image: drain-cleaning.webp
+excerpt: Your home's plumbing system is essential for daily life, but how do you know when it's time for a replacement? Discover the 7 key signs that indicate your plumbing system in Broward County may need to be replaced to prevent costly repairs and water damage.
+readTime: 10
 ---
 
 # 7 Signs You Need to Replace Your Home's Plumbing System in Broward County

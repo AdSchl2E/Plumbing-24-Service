@@ -1,9 +1,12 @@
 ---
-title: "Common Plumbing Emergencies in Broward County and How to Handle Them"
+title: Common Plumbing Emergencies in Broward County and How to Handle Them
+slug: common-plumbing-emergencies
 date: 2025-08-20
-author: "Plumbing 24 Service Inc"
-category: "Plumbing Tips"
-image: "../img/blog/plumbing-emergency.webp"
+author: Plumbing 24 Service
+category: Emergency
+image: plumbing-emergency.webp
+excerpt: Plumbing emergencies can strike at any time. Learn about common plumbing emergencies in Broward County and how to handle them effectively to minimize damage and ensure safety.
+readTime: 10
 ---
 
 # Common Plumbing Emergencies in Broward County and How to Handle Them
