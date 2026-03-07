@@ -7,6 +7,7 @@
   <meta name="description" content="Terms of Service for Plumbing 24 Service Inc. Please read these terms carefully before using our plumbing services in Broward County, Florida.">
   <link rel="canonical" href="https://plumbing24service.com/terms-of-service.html">
   <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Terms of Service | Plumbing 24 Service Inc">
   <meta property="og:description" content="Terms of Service for Plumbing 24 Service Inc. Please read these terms carefully before using our plumbing services in Broward County, Florida.">
   <meta property="og:url" content="https://plumbing24service.com/terms-of-service.html">
@@ -16,6 +17,11 @@
   <meta name="twitter:title" content="Terms of Service | Plumbing 24 Service Inc">
   <meta name="twitter:description" content="Terms of Service for Plumbing 24 Service Inc. Please read these terms carefully before using our plumbing services.">
   <meta name="twitter:image" content="https://plumbing24service.com/img/logo.webp">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
 
   <link rel="stylesheet" href="fonts/css/all.min.css?v=2">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -40,6 +46,45 @@
     .terms-section ul { list-style: disc; }
     .terms-section strong { color: #111827; }
   </style>
+
+    <!-- WebPage Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Terms of Service",
+      "description": "Terms of Service for Plumbing 24 Service Inc.",
+      "url": "https://plumbing24service.com/terms-of-service.html",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Plumbing 24 Service Inc",
+        "url": "https://plumbing24service.com"
+      }
+    }
+    </script>
+
+    <!-- Google Tag Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17677468147"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17677468147');
+    </script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') { window.location = url; }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17677468147/t9y7CNzC_8EbEPODo-1B',
+          'value': 1.0,
+          'currency': 'USD',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
 </head>
 <body class="font-sans">
   <!-- Top Bar -->
@@ -47,7 +92,7 @@
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-4">
         <i class="fas fa-phone-alt"></i>
-        <a href="tel:9546640144" class="font-bold text-lg" title="Call Our 24/7 Emergency Plumbing Service">
+        <a href="tel:9546640144" onclick="return gtag_report_conversion('tel:9546640144')" class="font-bold text-lg" title="Call Our 24/7 Emergency Plumbing Service">
           (954) 664-0144
         </a>
       </div>
@@ -214,11 +259,7 @@
               </li>
               <li class="flex items-start">
                 <i class="fas fa-phone-alt mt-1 mr-3 text-blue-600"></i>
-                <span><strong>Phone:</strong> <a href="tel:9546640144" class="text-blue-600 hover:underline">(954) 664-0144</a></span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-600"></i>
-                <span><strong>Address:</strong> 5311 NW 44th Ave, Tamarac, FL 33319</span>
+                <span><strong>Phone:</strong> <a href="tel:9546640144" onclick="return gtag_report_conversion('tel:9546640144')" class="text-blue-600 hover:underline">(954) 664-0144</a></span>
               </li>
             </ul>
           </div>
@@ -282,11 +323,7 @@
           <ul class="space-y-4">
             <li class="flex items-start">
               <i class="fas fa-phone-alt mt-1 mr-3 text-blue-600"></i>
-              <a href="tel:9546640144" class="hover:underline" title="Call Plumbing 24 Service Inc">(954) 664-0144</a>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-600"></i>
-              <span>5311 NW 44th Ave Tamarac, FL 33319</span>
+              <a href="tel:9546640144" onclick="return gtag_report_conversion('tel:9546640144')" class="hover:underline" title="Call Plumbing 24 Service Inc">(954) 664-0144</a>
             </li>
             <li class="flex items-start">
               <i class="fas fa-envelope mt-1 mr-3 text-blue-600"></i>
@@ -320,7 +357,7 @@
     <i class="fas fa-arrow-up text-3xl md:text-xl"></i>
   </button>
 
-  <a href="tel:9546640144" id="mobile-call-button" title="Call Our Emergency Plumbing Service Now"
+  <a href="tel:9546640144" onclick="return gtag_report_conversion('tel:9546640144')" id="mobile-call-button" title="Call Our Emergency Plumbing Service Now"
     class="fixed bottom-10 right-6 bg-green-600 hover:bg-green-700 text-white w-16 h-16 rounded-full shadow-lg z-50 hidden md:hidden flex items-center justify-center">
     <i class="fas fa-phone-alt text-3xl"></i>
   </a>

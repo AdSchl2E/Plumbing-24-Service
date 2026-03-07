@@ -94,7 +94,7 @@ If your home has experienced flooding or hurricane damage, your plumbing system 
 ## The Replumbing Process: What to Expect
 
 1. **Inspection:** Camera inspection of pipes to assess condition
-2. **Permitting:** Obtaining necessary Miami-Dade County permits
+2. **Permitting:** Obtaining necessary Broward County permits
 3. **Installation:** Professional installation of new pipes
 4. **Inspection:** Final inspection by local authorities
 5. **Cleanup:** Complete cleanup and drywall repair
@@ -113,7 +113,7 @@ Many Broward County homeowners see a return on investment through:
 
 ## Financing Options
 
-- Miami-Dade County home improvement loans
+- Broward County home improvement loans
 - Energy-efficient financing programs
 - Payment plans through licensed plumbers
 - Home equity options

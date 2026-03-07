@@ -7,23 +7,77 @@
       Inc</title>
     <meta name="description"
       content="24/7 emergency plumbing services in Broward County & surroundings. Expert plumbers for repairs, installations, and maintenance. Same-day service with lifetime warranty. Call (954) 664-0144">
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google.com https://cdn.jsdelivr.net;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://region1.google-analytics.com;
+      img-src 'self' data: https:;
+      font-src 'self' https: data:;
+      frame-src 'self' https://www.google.com;
+    ">
     <link rel="canonical" href="https://plumbing24service.com/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Emergency Plumbing Service Broward County | Plumbing 24 Service Inc">
-    <meta property="og:description" content="24/7 emergency plumbing services in Broward County & surroundings. Expert plumbers for repairs, installations, and maintenance. Same-day service with lifetime warranty.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title"
+      content="Emergency Plumbing Service Broward County | Plumbing 24 Service Inc">
+    <meta property="og:description"
+      content="24/7 emergency plumbing services in Broward County & surroundings. Expert plumbers for repairs, installations, and maintenance. Same-day service with lifetime warranty.">
     <meta property="og:url" content="https://plumbing24service.com/">
-    <meta property="og:image" content="https://plumbing24service.com/img/logo.webp">
+    <meta property="og:image"
+      content="https://plumbing24service.com/img/logo.webp">
     <meta property="og:site_name" content="Plumbing 24 Service Inc">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Emergency Plumbing Service Broward County | Plumbing 24 Service Inc">
-    <meta name="twitter:description" content="24/7 emergency plumbing services in Broward County & surroundings. Expert plumbers for repairs, installations, and maintenance. Same-day service with lifetime warranty.">
-    <meta name="twitter:image" content="https://plumbing24service.com/img/logo.webp">
+    <meta name="twitter:title"
+      content="Emergency Plumbing Service Broward County | Plumbing 24 Service Inc">
+    <meta name="twitter:description"
+      content="24/7 emergency plumbing services in Broward County & surroundings. Expert plumbers for repairs, installations, and maintenance. Same-day service with lifetime warranty.">
+    <meta name="twitter:image"
+      content="https://plumbing24service.com/img/logo.webp">
 
     <link rel="dns-prefetch" href="https://www.google.com">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="fonts/css/all.min.css?v=2">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css?v=2">
+
+    <!-- Google Tag Tracking -->
+    <!-- Google tag (gtag.js) -->
+    <script async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17677468147"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'AW-17677468147');
+    </script>
+
+    <!-- Event snippet for Click to call conversion page
+        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17677468147/t9y7CNzC_8EbEPODo-1B',
+            'value': 1.0,
+            'currency': 'USD',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
 
     <style>
       .review-text {
@@ -48,14 +102,6 @@
       "url": "https://plumbing24service.com",
       "telephone": "+19546640144",
       "email": "contact@plumbing24service.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "5311 NW 44th Ave",
-        "addressLocality": "Tamarac",
-        "addressRegion": "FL",
-        "postalCode": "33319",
-        "addressCountry": "US"
-      },
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 26.2128,
@@ -117,7 +163,8 @@
         <div class="flex items-center space-x-4">
           <i class="fas fa-phone-alt"></i>
           <a href="tel:9546640144" class="font-bold text-lg"
-            title="Call Our 24/7 Emergency Plumbing Service">
+            title="Call Our 24/7 Emergency Plumbing Service"
+            onclick="return gtag_report_conversion('tel:9546640144')">
             (954) 664-0144
           </a>
         </div>
@@ -152,7 +199,8 @@
           <a href="blogs.html" title="Plumbing Tips and Expert Advice"
             class="text-white hover:text-blue-300 font-medium">Blog</a>
           <a href="#contact" title="Get a Free Plumbing Quote"
-            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">Get a Quote</a>
+            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">Get
+            a Quote</a>
         </nav>
         <button id="mobile-menu-button" class="md:hidden text-white">
           <i class="fas fa-bars text-2xl"></i>
@@ -169,1074 +217,107 @@
             <a href="#services" title="Our Professional Plumbing Services"
               class="text-white hover:text-blue-300 font-medium py-2 border-b border-gray-700">Services</a>
             <a href="#about" title="About Our Plumbing Company"
-              class="text-white hover:text-blue-300 font-medium py-2 border-b border-gray-700">About Us</a>
+              class="text-white hover:text-blue-300 font-medium py-2 border-b border-gray-700">About
+              Us</a>
             <a href="#projects"
               title="View Our Recent Plumbing Work"
-              class="text-white hover:text-blue-300 font-medium py-2 border-b border-gray-700">Our Work</a>
+              class="text-white hover:text-blue-300 font-medium py-2 border-b border-gray-700">Our
+              Work</a>
             <a href="blogs.html" title="Plumbing Tips and Articles"
               class="text-white hover:text-blue-300 font-medium py-2 border-b border-gray-700">Blog</a>
             <a href="#contact" title="Get a Free Plumbing Quote"
-              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-center transition duration-300">Get a Quote</a>
+              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-center transition duration-300">Get
+              a Quote</a>
           </nav>
         </div>
       </div>
     </header>
 
     <main>
-    <!-- Hero Section -->
-    <section class="hero text-white py-20 md:py-32">
-      <div
-        class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 mb-10 md:mb-0">
-          <h1 class="text-4xl md:text-5xl font-bold mb-6">Fast, Reliable
-            Plumbing Services in Broward County</h1>
-          <p class="text-xl mb-8">24/7 emergency plumbing services with same-day
-            response. Our expert professionals deliver quality work with a
-            lifetime warranty.</p>
-          <div
-            class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <a href="tel:9546640144"
-              title="Call Our 24/7 Emergency Plumbing Service"
-              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300">
-              <i class="fas fa-phone-alt mr-2"></i> Call Now (954) 664-0144
-            </a>
-            <a href="#contact" title="Request a Free Plumbing Estimate"
-              class="bg-white hover:bg-gray-200 text-blue-800 font-bold py-3 px-6 rounded-lg text-center transition duration-300">
-              Request Free Estimate
-            </a>
-          </div>
-          <div class="mt-8 flex flex-wrap gap-4">
+      <!-- Hero Section -->
+      <section class="hero text-white py-20 md:py-32">
+        <div
+          class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Fast, Reliable
+              Plumbing Services in Broward County</h1>
+            <p class="text-xl mb-8">24/7 emergency plumbing services with
+              same-day
+              response. Our expert professionals deliver quality work with a
+              lifetime warranty.</p>
             <div
-              class="flex items-center bg-white/20 px-4 py-2 rounded">
-              <i class="fas fa-check-circle mr-2 text-green-300"></i>
-              <span>Same Day Service</span>
-            </div>
-            <div
-              class="flex items-center bg-white/20 px-4 py-2 rounded">
-              <i class="fas fa-check-circle mr-2 text-green-300"></i>
-              <span>Lifetime Warranty</span>
-            </div>
-            <div
-              class="flex items-center bg-white/20 px-4 py-2 rounded">
-              <i class="fas fa-check-circle mr-2 text-green-300"></i>
-              <span>Best Price Guarantee</span>
-            </div>
-          </div>
-        </div>
-        <div class="md:w-1/2">
-          <div class="bg-white/90 rounded-lg p-6 max-w-md mx-auto">
-            <h3 class="text-2xl font-bold text-blue-800 mb-4">Request a Free
-              Estimate</h3>
-            <form class="space-y-4" id="contact-form">
-              <div>
-                <label for="name"
-                  class="block text-gray-700 font-medium mb-1"><i class="fas fa-user text-blue-500" style="margin-right:6px; font-size:13px;"></i>Your Name <span style="color:#dc2626;">*</span></label>
-                <input type="text" id="name" name="from_name" required
-                  placeholder="John Doe"
-                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
-              </div>
-              <div>
-                <label for="email"
-                  class="block text-gray-700 font-medium mb-1"><i class="fas fa-envelope text-blue-500" style="margin-right:6px; font-size:13px;"></i>Email
-                  Address <span style="color:#dc2626;">*</span></label>
-                <input type="email" id="email" name="from_email" required
-                  placeholder="you@example.com"
-                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
-              </div>
-              <div>
-                <label for="phone"
-                  class="block text-gray-700 font-medium mb-1"><i class="fas fa-phone text-blue-500" style="margin-right:6px; font-size:13px;"></i>Phone
-                  Number</label>
-                <input type="tel" id="phone" name="phone"
-                  placeholder="(954) 555-0123"
-                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
-              </div>
-              <div>
-                <label for="service"
-                  class="block text-gray-700 font-medium mb-1"><i class="fas fa-wrench text-blue-500" style="margin-right:6px; font-size:13px;"></i>Service
-                  Needed</label>
-                <select id="service" name="service"
-                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 cursor-pointer">
-                  <option disabled selected>Select Service</option>
-                  <option>Emergency Plumbing</option>
-                  <option>Drain Cleaning</option>
-                  <option>Water Heater Repair</option>
-                  <option>Toilet Repair</option>
-                  <option>Pipe Repair</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div>
-                <label for="message"
-                  class="block text-gray-700 font-medium mb-1">Message <span style="color:#dc2626;">*</span></label>
-                <textarea id="message" name="message" rows="4" required
-                  placeholder="How can we help you?"
-                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"></textarea>
-              </div>
-              <!-- Anti-spam honeypot -->
-              <input type="text" name="_honey" style="display:none">
-              <button type="submit"
-                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 cursor-pointer">
-                Send Message
-              </button>
-              <p style="font-size:12px; color:#9ca3af; text-align:center; margin-top:8px;"><i class="fas fa-lock" style="margin-right:4px;"></i>Your information is secure and will not be shared.</p>
-            </form>
-            <div id="toast-success"
-              class="fixed top-28 right-8 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 opacity-0 pointer-events-none transition-opacity duration-300">
-              <i class="fas fa-check-circle mr-2"></i>Message sent successfully!
-            </div>
-            <div id="toast-error"
-              class="fixed top-28 right-8 bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 opacity-0 pointer-events-none transition-opacity duration-300">
-              <i class="fas fa-exclamation-circle mr-2"></i><span>Failed to send message. Please try again.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Intro Section -->
-    <section id="about" class="py-16 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-blue-800 mb-4">Our Plumbing
-            Services in Broward County, FL</h2>
-          <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-        </div>
-        <div class="max-w-4xl mx-auto text-lg text-gray-700">
-          <p class="mb-6">From minor leaks to major pipe bursts, Plumbing
-            Service 24 Inc is your trusted plumbing expert serving Broward County
-            and surrounding areas. While some plumbing issues like a slow drain
-            might seem simple, most require professional attention to prevent
-            costly damage.</p>
-          <p class="mb-6">Our comprehensive plumbing services cover both
-            residential and commercial properties throughout Broward County.
-            Whether you're dealing with a clogged kitchen sink, water heater
-            failure, or need complete repiping, our team of expert plumbers is
-            ready to help 24/7.</p>
-          <p>We utilize state-of-the-art equipment and techniques to ensure
-            efficient, clean solutions for all your plumbing needs. With
-            transparent pricing, free estimates, and a commitment to customer
-            satisfaction, we're proud to be Broward County's most reliable plumbing
-            service provider.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-16">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-blue-800 mb-4">Our Professional
-            Plumbing Services</h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Comprehensive
-            solutions for all your plumbing needs in Broward County and surrounding
-            areas</p>
-          <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Service 1 -->
-          <div
-            class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-            <div class="h-48 bg-blue-100 flex items-center justify-center">
-              <i class="fas fa-tools text-6xl text-blue-600"></i>
-            </div>
-            <div class="p-6">
-              <a href="services/emergency-plumbing.html"
-                title="Learn more about our emergency plumbing services">
-                <h3
-                  class="text-xl font-bold text-blue-800 mb-3 hover:text-blue-600">Emergency
-                  Plumbing</h3>
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <a href="tel:9546640144"
+                title="Call Our 24/7 Emergency Plumbing Service"
+                onclick="return gtag_report_conversion('tel:9546640144')"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                <i class="fas fa-phone-alt mr-2"></i> Call Now (954) 664-0144
               </a>
-              <p class="text-gray-600 mb-4">24/7 response to burst pipes, severe
-                leaks, and other urgent plumbing emergencies to prevent water
-                damage to your Broward County property.</p>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Burst pipe repair</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Sewage backup cleanup</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Flood prevention</span>
-                </li>
-              </ul>
-              <div class="mt-4">
-                <a href="services/emergency-plumbing.html"
-                  class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
-                  title="Learn more about our emergency plumbing services">
-                  Learn more about our emergency plumbing services <i
-                    class="fas fa-arrow-right ml-1"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service 2 -->
-          <div
-            class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-            <div class="h-48 bg-blue-100 flex items-center justify-center">
-              <i class="fas fa-shower text-6xl text-blue-600"></i>
-            </div>
-            <div class="p-6">
-              <a href="services/drain-cleaning.html"
-                title="Learn more about our drain cleaning services">
-                <h3
-                  class="text-xl font-bold text-blue-800 mb-3 hover:text-blue-600">Drain
-                  Cleaning</h3>
+              <a href="#contact" title="Request a Free Plumbing Estimate"
+                class="bg-white hover:bg-gray-200 text-blue-800 font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                Request Free Estimate
               </a>
-              <p class="text-gray-600 mb-4">Professional drain cleaning services
-                using hydro jetting and other advanced techniques to clear
-                stubborn clogs in Broward County homes.</p>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Kitchen sink clogs</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Bathtub/shower drains</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Main sewer line cleaning</span>
-                </li>
-              </ul>
-              <div class="mt-4">
-                <a href="services/drain-cleaning.html"
-                  class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
-                  title="Learn more about our drain cleaning services">
-                  Learn more about our drain cleaning services <i
-                    class="fas fa-arrow-right ml-1"></i>
-                </a>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <div
+                class="flex items-center bg-white/20 px-4 py-2 rounded">
+                <i class="fas fa-check-circle mr-2 text-green-300"></i>
+                <span>Same Day Service</span>
+              </div>
+              <div
+                class="flex items-center bg-white/20 px-4 py-2 rounded">
+                <i class="fas fa-check-circle mr-2 text-green-300"></i>
+                <span>Lifetime Warranty</span>
+              </div>
+              <div
+                class="flex items-center bg-white/20 px-4 py-2 rounded">
+                <i class="fas fa-check-circle mr-2 text-green-300"></i>
+                <span>Best Price Guarantee</span>
               </div>
             </div>
           </div>
-
-          <!-- Service 3 -->
-          <div
-            class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-            <div class="h-48 bg-blue-100 flex items-center justify-center">
-              <i class="fas fa-fire-alt text-6xl text-blue-600"></i>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-blue-800 mb-3">Water Heater
-                Services</h3>
-              <p class="text-gray-600 mb-4">Expert installation, repair, and
-                maintenance of tank and tankless water heaters for Broward County
-                residences and businesses.</p>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Tankless water heater installation</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Leaking water heater repair</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Annual maintenance plans</span>
-                </li>
-              </ul>
-              <div class="mt-4">
-                <a href="services/water-heater-services.html"
-                  class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
-                  title="Learn more about our water heater services">
-                  Learn more about our water heater services <i
-                    class="fas fa-arrow-right ml-1"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service 4 -->
-          <div
-            class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-            <div class="h-48 bg-blue-100 flex items-center justify-center">
-              <i class="fas fa-toilet text-6xl text-blue-600"></i>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-blue-800 mb-3">Toilet Repair &
-                Installation</h3>
-              <p class="text-gray-600 mb-4">Complete toilet services including
-                repairs, replacements, and new installations for Broward County
-                homeowners.</p>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Clogged toilet repair</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Toilet flange replacement</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Water-efficient toilet upgrades</span>
-                </li>
-              </ul>
-              <div class="mt-4">
-                <a href="services/toilet-repair.html"
-                  class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
-                  title="Learn more about our toilet repair and installation services">
-                  More about our toilet repair and installation services <i
-                    class="fas fa-arrow-right ml-1"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service 5 -->
-          <div
-            class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-            <div class="h-48 bg-blue-100 flex items-center justify-center">
-              <i class="fas fa-faucet text-6xl text-blue-600"></i>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-blue-800 mb-3">Pipe Repair &
-                Replacement</h3>
-              <p class="text-gray-600 mb-4">Trenchless pipe repair and
-                replacement solutions to minimize disruption to your Broward County
-                property.</p>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Leaky pipe repair</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Pipe relining technology</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Whole-house repiping</span>
-                </li>
-              </ul>
-              <div class="mt-4">
-                <a href="services/pipe-repair.html"
-                  class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
-                  title="Learn more about our pipe repair and replacement services">
-                  More about our pipe repair and replacement services <i
-                    class="fas fa-arrow-right ml-1"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service 6 -->
-          <div
-            class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-            <div class="h-48 bg-blue-100 flex items-center justify-center">
-              <i class="fas fa-home text-6xl text-blue-600"></i>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-blue-800 mb-3">Commercial
-                Plumbing</h3>
-              <p class="text-gray-600 mb-4">Specialized plumbing services for
-                Broward County businesses, restaurants, and commercial
-                properties.</p>
-              <ul class="space-y-2 text-gray-700">
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Grease trap installation</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Backflow prevention</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                  <span>Commercial water heater services</span>
-                </li>
-              </ul>
-              <div class="mt-4">
-                <a href="services/commercial-plumbing.html"
-                  class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
-                  title="Learn more about our commercial plumbing services">
-                  Learn more about our commercial plumbing services <i
-                    class="fas fa-arrow-right ml-1"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How We Work Section -->
-    <section class="py-16 bg-blue-800 text-white">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold mb-4">How We Work</h2>
-          <p class="text-xl max-w-2xl mx-auto">Service That's Simple and
-            Straightforward</p>
-          <div class="w-24 h-1 bg-white mx-auto mt-4"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Step 1 -->
-          <div class="text-center">
-            <div
-              class="bg-white/20 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
-              <i class="fas fa-search text-4xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Diagnose & Evaluate</h3>
-            <p class="text-blue-100">Our expert plumbers perform a detailed
-              assessment with state-of-the-art tools to pinpoint the exact
-              problem.</p>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="text-center">
-            <div
-              class="bg-white/20 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
-              <i class="fas fa-file-invoice-dollar text-4xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Estimate & Execute</h3>
-            <p class="text-blue-100">You receive a clear, itemized estimate
-              upfront. Once approved, we get straight to work, no hidden costs,
-              just honest pricing.</p>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="text-center">
-            <div
-              class="bg-white/20 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
-              <i class="fas fa-broom text-4xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Finalize & Clean</h3>
-            <p class="text-blue-100">Upon completion, we thoroughly clean the
-              work area and perform a final inspection to guarantee your
-              complete satisfaction.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-blue-800 mb-4">Recent Plumbing
-            Projects</h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">See how we've
-            helped Broward County homeowners and businesses with their plumbing
-            needs</p>
-          <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
-        </div>
-
-        <!-- Projects Carousel -->
-        <div style="position:relative; padding:0 56px;">
-          <!-- Arrow Left -->
-          <button id="projects-prev" aria-label="Previous project">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <!-- Arrow Right -->
-          <button id="projects-next" aria-label="Next project">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-
-          <!-- Carousel Container -->
-          <div id="projects-carousel" style="overflow:hidden;">
-            <div id="projects-track">
-
-              <!-- Slide 1 — Bathroom Vanity Repair -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/2025-11-12%20(1).webp" alt="Plumbing 24 Service plumber repairing bathroom vanity plumbing in Broward County" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Bathroom Vanity Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Broward County</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 2 -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/tuyau-brille-sdb.webp" alt="Emergency pipe repair in Tamarac FL" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Emergency Pipe Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Tamarac</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 3 — Kitchen Sink Repair -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/2025-10-26.webp" alt="Plumbing 24 Service plumber fixing kitchen sink in Tamarac FL" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Kitchen Sink Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Tamarac</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 4 -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/grosse-machine-tuyau.webp" alt="Water heater upgrade in Coral Springs FL" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Water Heater Upgrade</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Coral Springs</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 5 — Water Heater Service -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/2025-12-03.webp" alt="Plumbing 24 Service plumber servicing exterior water heater in Broward County" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Water Heater Service</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Pompano Beach</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 6 -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/toilette-propre.webp" alt="Toilet repair in Pembroke Pines FL" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Toilet Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Pembroke Pines</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 7 — Roof Vent Plumbing -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/2026-02-22.webp" alt="Plumbing 24 Service plumber repairing roof plumbing vent in Broward County" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Roof Vent Plumbing</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Boca Raton</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 8 -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/dessous-lavabo.webp" alt="Sink plumbing repair in Plantation FL" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Sink Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Plantation</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 9 — Under-Cabinet Repair -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/2025-10-26%20(1).webp" alt="Plumbing 24 Service plumber repairing under-cabinet plumbing in Tamarac FL" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Under-Cabinet Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Tamarac</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 10 -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/tuyau-eau-mur.webp" alt="Pipe installation in Pompano Beach FL" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Pipe Installation</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Pompano Beach</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 11 — Bathroom Sink Repair -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/2025-11-12.webp" alt="Plumbing 24 Service plumber fixing bathroom sink in Broward County" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Bathroom Sink Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Broward County</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 12 -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/trou-mur-robinet-1.webp" alt="Faucet installation in Broward County FL" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Faucet Installation</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Broward County</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 13 — Exterior Plumbing Repair -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/2026-02-22%20(1).webp" alt="Plumbing 24 Service plumber repairing exterior water line in Broward County" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Exterior Plumbing Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">West Palm Beach</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 14 — Commercial Kitchen Plumbing -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/2025-12-03%20(1).webp" alt="Plumbing 24 Service plumber working on commercial kitchen plumbing in Broward County" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Commercial Kitchen Plumbing</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Pompano Beach</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 15 -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/tuyau-robinet-1.webp" alt="Bathroom plumbing repair in West Palm Beach FL" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Bathroom Plumbing Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">West Palm Beach</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 16 — Shower & Bathtub Repair -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/03-03-2026.webp" alt="Plumbing 24 Service plumber repairing shower and bathtub plumbing in Broward County" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Shower & Bathtub Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Tamarac</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 17 -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/gros-tuyau-sol.webp" alt="Sewer line repair in Broward County FL" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Sewer Line Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Broward County</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 18 -->
-              <div class="project-slide" style="padding:0 8px;">
-                <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
-                  <img src="img/gallery/tuyau-rouge-1.webp" alt="Hot water line repair in Pompano Beach FL" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;" loading="lazy"
-                    onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform='scale(1)'">
-                  <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
-                    <h3 style="color:#fff; font-weight:700; font-size:16px; margin:0;">Hot Water Line Repair</h3>
-                    <p style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Pompano Beach</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Carousel Dots -->
-          <div id="projects-dots"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Google Reviews Section -->
-    <section id="reviews" class="py-16 bg-gray-50" itemscope itemtype="https://schema.org/LocalBusiness">
-      <meta itemprop="name" content="Plumbing 24 Service Inc">
-      <meta itemprop="telephone" content="+19546640144">
-      <meta itemprop="address" content="5311 NW 44th Ave, Tamarac, FL 33319">
-      <div class="container mx-auto px-4">
-        <!-- Section Header -->
-        <div class="text-center mb-10">
-          <h2 class="text-3xl font-bold text-blue-800 mb-4">What Our Customers Say</h2>
-          <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
-
-          <!-- Google Rating Badge -->
-          <div style="display:inline-flex; align-items:center; gap:16px; background:#fff; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.1); padding:16px 24px;" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="5.0">
-            <meta itemprop="reviewCount" content="36">
-            <meta itemprop="bestRating" content="5">
-            <img src="https://www.google.com/favicon.ico" alt="Google" style="width:32px; height:32px;">
-            <div style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.3;">
-              <div style="display:flex; align-items:center; gap:8px;">
-                <span style="font-size:30px; font-weight:700; color:#1f2937;">5.0</span>
-                <div style="color:#FBBC04;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-              </div>
-              <a href="https://share.google/jRJqJSjVYSRH5n5fN" target="_blank" rel="noopener noreferrer" style="font-size:14px; color:#2563EB; text-decoration:none;" title="View all reviews on Google">Based on <strong>36 reviews</strong> <i class="fas fa-external-link-alt" style="font-size:11px; margin-left:4px;"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Reviews Horizontal Carousel -->
-        <div style="position:relative; padding:0 56px;">
-          <!-- Arrow Left -->
-          <button id="reviews-prev" aria-label="Previous reviews">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <!-- Arrow Right -->
-          <button id="reviews-next" aria-label="Next reviews">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-
-          <!-- Carousel Container -->
-          <div id="reviews-carousel" style="overflow:hidden;">
-            <div id="reviews-track">
-
-              <!-- Review 1 -->
-              <div class="review-slide" style="padding:0 8px;" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                <div style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
-                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-                    <div style="width:40px; height:40px; background:#2563EB; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">S</div>
-                    <div style="min-width:0;">
-                      <h4 style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" itemprop="author">Samantha Alonzo</h4>
-                      <div style="display:flex; align-items:center; gap:4px;">
-                        <div style="color:#FBBC04;"><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i></div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <p class="review-text" style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;" itemprop="reviewBody">The Technician who came (WITHIN THE HOUR) was extremely polite, professional, and fast. Immediately i told him my problems and from walking up my driveway to completing the work, 45min. He means business. I got the main line to my single family home snaked and my spout to the one of my bathrooms fixed.</p>
-                  <meta itemprop="datePublished" content="2026-02-21">
-                </div>
-              </div>
-
-              <!-- Review 2 -->
-              <div class="review-slide" style="padding:0 8px;" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                <div style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
-                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-                    <div style="width:40px; height:40px; background:#16a34a; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">P</div>
-                    <div style="min-width:0;">
-                      <h4 style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" itemprop="author">Phyllis Ratliff</h4>
-                      <div style="display:flex; align-items:center; gap:4px;">
-                        <div style="color:#FBBC04;"><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i></div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <p class="review-text" style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;" itemprop="reviewBody">I was in need of having an emergency water cutoff Valve installed because mine was over 60 year, corroded and under ground. The owner came himself and made the installation. He was professional, efficient, and extremely knowledgeable. Most importantly, he was very trustworthy and his pricing was fair and reasonable.</p>
-                  <meta itemprop="datePublished" content="2026-02-01">
-                </div>
-              </div>
-
-              <!-- Review 3 -->
-              <div class="review-slide" style="padding:0 8px;" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                <div style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
-                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-                    <div style="width:40px; height:40px; background:#9333ea; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">F</div>
-                    <div style="min-width:0;">
-                      <h4 style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" itemprop="author">Felicitas Mireles</h4>
-                      <div style="display:flex; align-items:center; gap:4px;">
-                        <div style="color:#FBBC04;"><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i></div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <p class="review-text" style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;" itemprop="reviewBody">Around 11 pm, we discovered a severe shower leak that quickly escalated into an emergency. I promptly called their 24/7 emergency line, and they dispatched a technician immediately. Abdul was professional, courteous, and highly efficient. He swiftly resolved the complex leak. I highly recommend!</p>
-                  <meta itemprop="datePublished" content="2025-12-01">
-                </div>
-              </div>
-
-              <!-- Review 4 -->
-              <div class="review-slide" style="padding:0 8px;" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                <div style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
-                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-                    <div style="width:40px; height:40px; background:#dc2626; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">B</div>
-                    <div style="min-width:0;">
-                      <h4 style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" itemprop="author">Bri Alexis</h4>
-                      <div style="display:flex; align-items:center; gap:4px;">
-                        <div style="color:#FBBC04;"><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i></div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <p class="review-text" style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;" itemprop="reviewBody">10/10 recommend Plumbing 24/7 services! I called Abdul in need of his services to hook up my entire kitchen plumbing after construction and I couldn't be happier. Not only does he do great work, but he was very professional, clean, polite, fast and respectful.</p>
-                  <meta itemprop="datePublished" content="2025-12-01">
-                </div>
-              </div>
-
-              <!-- Review 5 -->
-              <div class="review-slide" style="padding:0 8px;" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                <div style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
-                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-                    <div style="width:40px; height:40px; background:#ca8a04; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">H</div>
-                    <div style="min-width:0;">
-                      <h4 style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" itemprop="author">Hershey Grogan</h4>
-                      <div style="display:flex; align-items:center; gap:4px;">
-                        <div style="color:#FBBC04;"><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i></div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <p class="review-text" style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;" itemprop="reviewBody">I highly recommend Plumbing 24 service! The plumber arrived exactly on time, quickly diagnosed the issue, and fixed it efficiently. They explained the repair clearly and the pricing was very reasonable—no hidden fees. Five stars!</p>
-                  <meta itemprop="datePublished" content="2025-12-01">
-                </div>
-              </div>
-
-              <!-- Review 6 -->
-              <div class="review-slide" style="padding:0 8px;" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                <div style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
-                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-                    <div style="width:40px; height:40px; background:#0d9488; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">T</div>
-                    <div style="min-width:0;">
-                      <h4 style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" itemprop="author">Tanesha S.</h4>
-                      <div style="display:flex; align-items:center; gap:4px;">
-                        <div style="color:#FBBC04;"><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i></div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <p class="review-text" style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;" itemprop="reviewBody">Extremely Fast response!!!! Had a plumbing emergency on a Sunday and it was resolved promptly and efficiently!!! Thank you!!! A+ affordable fast emergency plumbing service</p>
-                  <meta itemprop="datePublished" content="2026-01-01">
-                </div>
-              </div>
-
-              <!-- Review 7 -->
-              <div class="review-slide" style="padding:0 8px;" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                <div style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
-                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-                    <div style="width:40px; height:40px; background:#4f46e5; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">V</div>
-                    <div style="min-width:0;">
-                      <h4 style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" itemprop="author">Veronica Castro</h4>
-                      <div style="display:flex; align-items:center; gap:4px;">
-                        <div style="color:#FBBC04;"><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i></div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <p class="review-text" style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;" itemprop="reviewBody">I had an excellent experience with Plumbing 24 Service. They were extremely professional, punctual, and honest from start to finish. The technician explained everything clearly, worked efficiently, and made sure the problem was fully resolved before leaving.</p>
-                  <meta itemprop="datePublished" content="2025-12-01">
-                </div>
-              </div>
-
-              <!-- Review 8 -->
-              <div class="review-slide" style="padding:0 8px;" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                <div style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
-                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-                    <div style="width:40px; height:40px; background:#ea580c; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">N</div>
-                    <div style="min-width:0;">
-                      <h4 style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" itemprop="author">Nitza Jusino</h4>
-                      <div style="display:flex; align-items:center; gap:4px;">
-                        <div style="color:#FBBC04;"><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i></div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <p class="review-text" style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;" itemprop="reviewBody">I had Abdul come to my house on two separate occasions. The first time was for a kitchen sink installation. Not only did he help me pick the correct new faucet but he noticed the wood under the sink was rotting so he changed it. His prices are very fair.</p>
-                  <meta itemprop="datePublished" content="2025-12-01">
-                </div>
-              </div>
-
-              <!-- Review 9 -->
-              <div class="review-slide" style="padding:0 8px;" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                <div style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
-                  <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-                    <div style="width:40px; height:40px; background:#db2777; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">D</div>
-                    <div style="min-width:0;">
-                      <h4 style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" itemprop="author">David Faulknor</h4>
-                      <div style="display:flex; align-items:center; gap:4px;">
-                        <div style="color:#FBBC04;"><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i><i class="fas fa-star" style="font-size:12px;"></i></div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <p class="review-text" style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;" itemprop="reviewBody">Thank you Plumbing 24 Service for your fast response. Abdul was amazing and very knowledgeable, he explained to me the process of rebuilding my toilet and charged me fairly. 100% recommend them.</p>
-                  <meta itemprop="datePublished" content="2026-02-01">
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Carousel Dots -->
-          <div id="reviews-dots"></div>
-        </div>
-
-        <!-- View All Button -->
-        <div style="text-align:center; margin-top:32px;">
-          <a href="https://share.google/jRJqJSjVYSRH5n5fN" target="_blank" rel="noopener noreferrer"
-            style="display:inline-flex; align-items:center; background:#2563EB; color:#fff; font-weight:700; padding:12px 32px; border-radius:8px; text-decoration:none; transition:background-color 0.3s;"
-            title="Read all 36 Google reviews for Plumbing 24 Service Inc"
-            onmouseenter="this.style.backgroundColor='#1d4ed8'" onmouseleave="this.style.backgroundColor='#2563EB'">
-            <i class="fab fa-google" style="margin-right:8px;"></i> Read All 36 Reviews on Google
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Service Area Map -->
-    <section class="py-16" id="service-area">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-blue-800 mb-4">Our Service
-            Area in Broward County</h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Proudly serving Broward County & surrounding areas with 24/7 emergency plumbing services</p>
-          <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229089.02674654808!2d-80.35!3d26.12!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a5a0e4472389%3A0x37b07a9ea4705baa!2sBroward%20County%2C%20FL!5e0!3m2!1sen!2sus!4v1689871234567!5m2!1sen!2sus"
-            style="width: 100%; border:0;" height="450" allowfullscreen
-            title="Google Map of Broward County Service Area"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div class="bg-blue-50 p-3 rounded-lg border border-blue-200">
-            <h3 class="font-bold text-blue-800">Broward County</h3>
-          </div>
-          <div class="bg-blue-50 p-3 rounded-lg border border-blue-200">
-            <h3 class="font-bold text-blue-800">Pompano Beach</h3>
-          </div>
-          <div class="bg-blue-50 p-3 rounded-lg border border-blue-200">
-            <h3 class="font-bold text-blue-800">Boca Raton</h3>
-          </div>
-          <div class="bg-blue-50 p-3 rounded-lg border border-blue-200">
-            <h3 class="font-bold text-blue-800">West Palm Beach</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-blue-800 text-white">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
-          <p class="text-xl max-w-2xl mx-auto">We're here 24/7 to assist with
-            all your plumbing needs in Broward County</p>
-          <div class="w-24 h-1 bg-white mx-auto mt-4"></div>
-        </div>
-
-        <div class="flex flex-col lg:flex-row gap-8">
-          <div class="lg:w-1/2">
-            <div class="bg-white/10 rounded-lg p-8 h-full">
-              <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-
-              <div class="space-y-6">
-                <div class="flex items-start">
-                  <div
-                    class="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mr-4">
-                    <i class="fas fa-phone-alt"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-bold">Phone</h4>
-                    <a href="tel:9546640144"
-                      class="text-lg hover:underline"
-                      title="Call Plumbing 24 Service Inc">
-                      (954) 664-0144</a>
-                    <p class="text-blue-200 text-sm">24/7 Emergency Service</p>
-                  </div>
-                </div>
-
-                <div class="flex items-start">
-                  <div
-                    class="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mr-4">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-bold">Address</h4>
-                    <p>5311 NW 44th Ave Tamarac, FL 33319</p>
-                    <p class="text-blue-200 text-sm">Serving all of Broward
-                      County & surroundings</p>
-                  </div>
-                </div>
-
-                <div class="flex items-start">
-                  <div
-                    class="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mr-4">
-                    <i class="fas fa-envelope"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-bold">Email</h4>
-                    <a href="mailto:contact@plumbing24service.com"
-                      title="Email Plumbing 24 Service Inc"
-                      class="hover:underline">contact@plumbing24service.com</a>
-                  </div>
-                </div>
-
-                <div class="flex items-start">
-                  <div
-                    class="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mr-4">
-                    <i class="fas fa-clock"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-bold">Hours</h4>
-                    <p>24/7 Emergency Service</p>
-                    <p class="text-blue-200 text-sm">Regular Hours: Mon-Sun 8
-                      am-8 pm</p>
-                    <p class="text-blue-200 text-sm">After Hours: Emergencies
-                      Only</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:w-1/2">
-            <div class="bg-white rounded-lg p-8 h-full">
-              <h3 class="text-2xl font-bold text-blue-800 mb-6">Request a Free
+          <div class="md:w-1/2">
+            <div class="bg-white/90 rounded-lg p-6 max-w-md mx-auto">
+              <h3 class="text-2xl font-bold text-blue-800 mb-4">Request a Free
                 Estimate</h3>
-              <form class="space-y-4" id="contact-form-bottom">
+              <form class="space-y-4" id="contact-form">
                 <div>
-                  <label for="name-bottom"
-                    class="block text-gray-700 font-medium mb-1"><i class="fas fa-user text-blue-500" style="margin-right:6px; font-size:13px;"></i>Your
-                    Name <span style="color:#dc2626;">*</span></label>
-                  <input type="text" id="name-bottom" name="from_name" required
+                  <label for="name"
+                    class="block text-gray-700 font-medium mb-1"><i
+                      class="fas fa-user text-blue-500"
+                      style="margin-right:6px; font-size:13px;"></i>Your Name
+                    <span style="color:#dc2626;">*</span></label>
+                  <input type="text" id="name" name="from_name" required
                     placeholder="John Doe"
                     class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
                 </div>
                 <div>
-                  <label for="email-bottom"
-                    class="block text-gray-700 font-medium mb-1"><i class="fas fa-envelope text-blue-500" style="margin-right:6px; font-size:13px;"></i>Email
+                  <label for="email"
+                    class="block text-gray-700 font-medium mb-1"><i
+                      class="fas fa-envelope text-blue-500"
+                      style="margin-right:6px; font-size:13px;"></i>Email
                     Address <span style="color:#dc2626;">*</span></label>
-                  <input type="email" id="email-bottom" name="from_email" required
+                  <input type="email" id="email" name="from_email" required
                     placeholder="you@example.com"
                     class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
                 </div>
                 <div>
-                  <label for="phone-bottom"
-                    class="block text-gray-700 font-medium mb-1"><i class="fas fa-phone text-blue-500" style="margin-right:6px; font-size:13px;"></i>Phone
+                  <label for="phone"
+                    class="block text-gray-700 font-medium mb-1"><i
+                      class="fas fa-phone text-blue-500"
+                      style="margin-right:6px; font-size:13px;"></i>Phone
                     Number</label>
-                  <input type="tel" id="phone-bottom" name="phone"
+                  <input type="tel" id="phone" name="phone"
                     placeholder="(954) 555-0123"
                     class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
                 </div>
                 <div>
-                  <label for="service-bottom"
-                    class="block text-gray-700 font-medium mb-1"><i class="fas fa-wrench text-blue-500" style="margin-right:6px; font-size:13px;"></i>Service
+                  <label for="service"
+                    class="block text-gray-700 font-medium mb-1"><i
+                      class="fas fa-wrench text-blue-500"
+                      style="margin-right:6px; font-size:13px;"></i>Service
                     Needed</label>
-                  <select id="service-bottom" name="service"
+                  <select id="service" name="service"
                     class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 cursor-pointer">
                     <option disabled selected>Select Service</option>
                     <option>Emergency Plumbing</option>
@@ -1244,13 +325,14 @@
                     <option>Water Heater Repair</option>
                     <option>Toilet Repair</option>
                     <option>Pipe Repair</option>
-                    <option>Other Service</option>
+                    <option>Other</option>
                   </select>
                 </div>
                 <div>
-                  <label for="message-bottom"
-                    class="block text-gray-700 font-medium mb-1">Message <span style="color:#dc2626;">*</span></label>
-                  <textarea id="message-bottom" name="message" rows="4" required
+                  <label for="message"
+                    class="block text-gray-700 font-medium mb-1">Message <span
+                      style="color:#dc2626;">*</span></label>
+                  <textarea id="message" name="message" rows="4" required
                     placeholder="How can we help you?"
                     class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"></textarea>
                 </div>
@@ -1260,34 +342,1398 @@
                   class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 cursor-pointer">
                   Send Message
                 </button>
-                <p style="font-size:12px; color:#9ca3af; text-align:center; margin-top:8px;"><i class="fas fa-lock" style="margin-right:4px;"></i>Your information is secure and will not be shared.</p>
+                <p
+                  style="font-size:12px; color:#9ca3af; text-align:center; margin-top:8px;"><i
+                    class="fas fa-lock" style="margin-right:4px;"></i>Your
+                  information is secure and will not be shared.</p>
               </form>
-              <div id="toast-success-bottom"
+              <div id="toast-success"
                 class="fixed top-28 right-8 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 opacity-0 pointer-events-none transition-opacity duration-300">
                 <i class="fas fa-check-circle mr-2"></i>Message sent
                 successfully!
               </div>
-              <div id="toast-error-bottom"
+              <div id="toast-error"
                 class="fixed top-28 right-8 bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 opacity-0 pointer-events-none transition-opacity duration-300">
-                <i class="fas fa-exclamation-circle mr-2"></i><span>Failed to send message. Please try again.</span>
+                <i class="fas fa-exclamation-circle mr-2"></i><span>Failed to
+                  send message. Please try again.</span>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Blog Section -->
-        <section id="blog" class="py-16 bg-gray-50">
-          <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-              <h2 class="text-3xl font-bold text-blue-800 mb-4">Plumbing Tips &
-                News</h2>
-              <p class="text-lg text-gray-600 max-w-2xl mx-auto">Helpful
-                articles
-                about plumbing maintenance and common issues in Broward County</p>
-              <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+      <!-- Intro Section -->
+      <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Our Plumbing
+              Services in Broward County, FL</h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+          </div>
+          <div class="max-w-4xl mx-auto text-lg text-gray-700">
+            <p class="mb-6">From minor leaks to major pipe bursts, Plumbing
+              Service 24 Inc is your trusted plumbing expert serving Broward
+              County
+              and surrounding areas. While some plumbing issues like a slow
+              drain
+              might seem simple, most require professional attention to prevent
+              costly damage.</p>
+            <p class="mb-6">Our comprehensive plumbing services cover both
+              residential and commercial properties throughout Broward County.
+              Whether you're dealing with a clogged kitchen sink, water heater
+              failure, or need complete repiping, our team of expert plumbers is
+              ready to help 24/7.</p>
+            <p>We utilize state-of-the-art equipment and techniques to ensure
+              efficient, clean solutions for all your plumbing needs. With
+              transparent pricing, free estimates, and a commitment to customer
+              satisfaction, we're proud to be Broward County's most reliable
+              plumbing
+              service provider.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-16">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Our Professional
+              Plumbing Services</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Comprehensive
+              solutions for all your plumbing needs in Broward County and
+              surrounding
+              areas</p>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div
+              class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+              <div class="h-48 bg-blue-100 flex items-center justify-center">
+                <i class="fas fa-tools text-6xl text-blue-600"></i>
+              </div>
+              <div class="p-6">
+                <a href="services/emergency-plumbing.html"
+                  title="Learn more about our emergency plumbing services">
+                  <h3
+                    class="text-xl font-bold text-blue-800 mb-3 hover:text-blue-600">Emergency
+                    Plumbing</h3>
+                </a>
+                <p class="text-gray-600 mb-4">24/7 response to burst pipes,
+                  severe
+                  leaks, and other urgent plumbing emergencies to prevent water
+                  damage to your Broward County property.</p>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Burst pipe repair</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Sewage backup cleanup</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Flood prevention</span>
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a href="services/emergency-plumbing.html"
+                    class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
+                    title="Learn more about our emergency plumbing services">
+                    Learn more about our emergency plumbing services <i
+                      class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 2 -->
+            <div
+              class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+              <div class="h-48 bg-blue-100 flex items-center justify-center">
+                <i class="fas fa-shower text-6xl text-blue-600"></i>
+              </div>
+              <div class="p-6">
+                <a href="services/drain-cleaning.html"
+                  title="Learn more about our drain cleaning services">
+                  <h3
+                    class="text-xl font-bold text-blue-800 mb-3 hover:text-blue-600">Drain
+                    Cleaning</h3>
+                </a>
+                <p class="text-gray-600 mb-4">Professional drain cleaning
+                  services
+                  using hydro jetting and other advanced techniques to clear
+                  stubborn clogs in Broward County homes.</p>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Kitchen sink clogs</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Bathtub/shower drains</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Main sewer line cleaning</span>
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a href="services/drain-cleaning.html"
+                    class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
+                    title="Learn more about our drain cleaning services">
+                    Learn more about our drain cleaning services <i
+                      class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div
+              class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+              <div class="h-48 bg-blue-100 flex items-center justify-center">
+                <i class="fas fa-fire-alt text-6xl text-blue-600"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-blue-800 mb-3">Water Heater
+                  Services</h3>
+                <p class="text-gray-600 mb-4">Expert installation, repair, and
+                  maintenance of tank and tankless water heaters for Broward
+                  County
+                  residences and businesses.</p>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Tankless water heater installation</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Leaking water heater repair</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Annual maintenance plans</span>
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a href="services/water-heater-services.html"
+                    class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
+                    title="Learn more about our water heater services">
+                    Learn more about our water heater services <i
+                      class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div
+              class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+              <div class="h-48 bg-blue-100 flex items-center justify-center">
+                <i class="fas fa-toilet text-6xl text-blue-600"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-blue-800 mb-3">Toilet Repair &
+                  Installation</h3>
+                <p class="text-gray-600 mb-4">Complete toilet services including
+                  repairs, replacements, and new installations for Broward
+                  County
+                  homeowners.</p>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Clogged toilet repair</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Toilet flange replacement</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Water-efficient toilet upgrades</span>
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a href="services/toilet-repair.html"
+                    class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
+                    title="Learn more about our toilet repair and installation services">
+                    More about our toilet repair and installation services <i
+                      class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div
+              class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+              <div class="h-48 bg-blue-100 flex items-center justify-center">
+                <i class="fas fa-faucet text-6xl text-blue-600"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-blue-800 mb-3">Pipe Repair &
+                  Replacement</h3>
+                <p class="text-gray-600 mb-4">Trenchless pipe repair and
+                  replacement solutions to minimize disruption to your Broward
+                  County
+                  property.</p>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Leaky pipe repair</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Pipe relining technology</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Whole-house repiping</span>
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a href="services/pipe-repair.html"
+                    class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
+                    title="Learn more about our pipe repair and replacement services">
+                    More about our pipe repair and replacement services <i
+                      class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div
+              class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+              <div class="h-48 bg-blue-100 flex items-center justify-center">
+                <i class="fas fa-home text-6xl text-blue-600"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-blue-800 mb-3">Commercial
+                  Plumbing</h3>
+                <p class="text-gray-600 mb-4">Specialized plumbing services for
+                  Broward County businesses, restaurants, and commercial
+                  properties.</p>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Grease trap installation</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Backflow prevention</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                    <span>Commercial water heater services</span>
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a href="services/commercial-plumbing.html"
+                    class="inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline"
+                    title="Learn more about our commercial plumbing services">
+                    Learn more about our commercial plumbing services <i
+                      class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How We Work Section -->
+      <section class="py-16 bg-blue-800 text-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">How We Work</h2>
+            <p class="text-xl max-w-2xl mx-auto">Service That's Simple and
+              Straightforward</p>
+            <div class="w-24 h-1 bg-white mx-auto mt-4"></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="text-center">
+              <div
+                class="bg-white/20 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-search text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Diagnose & Evaluate</h3>
+              <p class="text-blue-100">Our expert plumbers perform a detailed
+                assessment with state-of-the-art tools to pinpoint the exact
+                problem.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="text-center">
+              <div
+                class="bg-white/20 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-file-invoice-dollar text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Estimate & Execute</h3>
+              <p class="text-blue-100">You receive a clear, itemized estimate
+                upfront. Once approved, we get straight to work, no hidden
+                costs,
+                just honest pricing.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="text-center">
+              <div
+                class="bg-white/20 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-broom text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Finalize & Clean</h3>
+              <p class="text-blue-100">Upon completion, we thoroughly clean the
+                work area and perform a final inspection to guarantee your
+                complete satisfaction.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Recent Plumbing
+              Projects</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">See how we've
+              helped Broward County homeowners and businesses with their
+              plumbing
+              needs</p>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+          </div>
+
+          <!-- Projects Carousel -->
+          <div style="position:relative; padding:0 56px;">
+            <!-- Arrow Left -->
+            <button id="projects-prev" aria-label="Previous project">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <!-- Arrow Right -->
+            <button id="projects-next" aria-label="Next project">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Carousel Container -->
+            <div id="projects-carousel" style="overflow:hidden;">
+              <div id="projects-track">
+
+                <!-- Slide 1 — Bathroom Vanity Repair -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/2025-11-12%20(1).webp"
+                      alt="Plumbing 24 Service plumber repairing bathroom vanity plumbing in Broward County"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Bathroom
+                        Vanity Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Broward
+                        County</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/tuyau-brille-sdb.webp"
+                      alt="Emergency pipe repair in Tamarac FL"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Emergency
+                        Pipe Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Tamarac</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 3 — Kitchen Sink Repair -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/2025-10-26.webp"
+                      alt="Plumbing 24 Service plumber fixing kitchen sink in Tamarac FL"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Kitchen
+                        Sink Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Tamarac</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/grosse-machine-tuyau.webp"
+                      alt="Water heater upgrade in Coral Springs FL"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Water
+                        Heater Upgrade</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Coral
+                        Springs</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 5 — Water Heater Service -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/2025-12-03.webp"
+                      alt="Plumbing 24 Service plumber servicing exterior water heater in Broward County"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Water
+                        Heater Service</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Pompano
+                        Beach</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/toilette-propre.webp"
+                      alt="Toilet repair in Pembroke Pines FL"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Toilet
+                        Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Pembroke
+                        Pines</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 7 — Roof Vent Plumbing -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/2026-02-22.webp"
+                      alt="Plumbing 24 Service plumber repairing roof plumbing vent in Broward County"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Roof
+                        Vent Plumbing</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Boca
+                        Raton</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 8 -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/dessous-lavabo.webp"
+                      alt="Sink plumbing repair in Plantation FL"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Sink
+                        Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Plantation</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 9 — Under-Cabinet Repair -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/2025-10-26%20(1).webp"
+                      alt="Plumbing 24 Service plumber repairing under-cabinet plumbing in Tamarac FL"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Under-Cabinet
+                        Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Tamarac</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 10 -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/tuyau-eau-mur.webp"
+                      alt="Pipe installation in Pompano Beach FL"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Pipe
+                        Installation</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Pompano
+                        Beach</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 11 — Bathroom Sink Repair -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/2025-11-12.webp"
+                      alt="Plumbing 24 Service plumber fixing bathroom sink in Broward County"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Bathroom
+                        Sink Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Broward
+                        County</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 12 -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/trou-mur-robinet-1.webp"
+                      alt="Faucet installation in Broward County FL"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Faucet
+                        Installation</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Broward
+                        County</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 13 — Exterior Plumbing Repair -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/2026-02-22%20(1).webp"
+                      alt="Plumbing 24 Service plumber repairing exterior water line in Broward County"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Exterior
+                        Plumbing Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">West
+                        Palm Beach</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 14 — Commercial Kitchen Plumbing -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/2025-12-03%20(1).webp"
+                      alt="Plumbing 24 Service plumber working on commercial kitchen plumbing in Broward County"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Commercial
+                        Kitchen Plumbing</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Pompano
+                        Beach</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 15 -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/tuyau-robinet-1.webp"
+                      alt="Bathroom plumbing repair in West Palm Beach FL"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Bathroom
+                        Plumbing Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">West
+                        Palm Beach</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 16 — Shower & Bathtub Repair -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/03-03-2026.webp"
+                      alt="Plumbing 24 Service plumber repairing shower and bathtub plumbing in Broward County"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Shower
+                        & Bathtub Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Tamarac</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 17 -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/gros-tuyau-sol.webp"
+                      alt="Sewer line repair in Broward County FL"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Sewer
+                        Line Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Broward
+                        County</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 18 -->
+                <div class="project-slide" style="padding:0 8px;">
+                  <div
+                    style="border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); aspect-ratio:4/3; position:relative;">
+                    <img src="img/gallery/tuyau-rouge-1.webp"
+                      alt="Hot water line repair in Pompano Beach FL"
+                      style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s;"
+                      loading="lazy"
+                      onmouseenter="this.style.transform='scale(1.05)'"
+                      onmouseleave="this.style.transform='scale(1)'">
+                    <div
+                      style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding:16px;">
+                      <h3
+                        style="color:#fff; font-weight:700; font-size:16px; margin:0;">Hot
+                        Water Line Repair</h3>
+                      <p
+                        style="color:#d1d5db; font-size:13px; margin:4px 0 0;">Pompano
+                        Beach</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Carousel Dots -->
+            <div id="projects-dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Google Reviews Section -->
+      <section id="reviews" class="py-16 bg-gray-50" itemscope
+        itemtype="https://schema.org/LocalBusiness">
+        <meta itemprop="name" content="Plumbing 24 Service Inc">
+        <meta itemprop="telephone" content="+19546640144">
+        <div class="container mx-auto px-4">
+          <!-- Section Header -->
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">What Our Customers
+              Say</h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+
+            <!-- Google Rating Badge -->
+            <div
+              style="display:inline-flex; align-items:center; gap:16px; background:#fff; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.1); padding:16px 24px;"
+              itemprop="aggregateRating" itemscope
+              itemtype="https://schema.org/AggregateRating">
+              <meta itemprop="ratingValue" content="5.0">
+              <meta itemprop="reviewCount" content="36">
+              <meta itemprop="bestRating" content="5">
+              <img src="https://www.google.com/favicon.ico" alt="Google"
+                style="width:32px; height:32px;">
+              <div
+                style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.3;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <span
+                    style="font-size:30px; font-weight:700; color:#1f2937;">5.0</span>
+                  <div style="color:#FBBC04;"><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                </div>
+                <a href="https://share.google/jRJqJSjVYSRH5n5fN" target="_blank"
+                  rel="noopener noreferrer"
+                  style="font-size:14px; color:#2563EB; text-decoration:none;"
+                  title="View all reviews on Google">Based on <strong>36
+                    reviews</strong> <i class="fas fa-external-link-alt"
+                    style="font-size:11px; margin-left:4px;"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviews Horizontal Carousel -->
+          <div style="position:relative; padding:0 56px;">
+            <!-- Arrow Left -->
+            <button id="reviews-prev" aria-label="Previous reviews">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <!-- Arrow Right -->
+            <button id="reviews-next" aria-label="Next reviews">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Carousel Container -->
+            <div id="reviews-carousel" style="overflow:hidden;">
+              <div id="reviews-track">
+
+                <!-- Review 1 -->
+                <div class="review-slide" style="padding:0 8px;"
+                  itemprop="review" itemscope
+                  itemtype="https://schema.org/Review">
+                  <div
+                    style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
+                    <div
+                      style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                      <div
+                        style="width:40px; height:40px; background:#2563EB; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">S</div>
+                      <div style="min-width:0;">
+                        <h4
+                          style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"
+                          itemprop="author">Samantha Alonzo</h4>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                          <div style="color:#FBBC04;"><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i></div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <p class="review-text"
+                      style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;"
+                      itemprop="reviewBody">The Technician who came (WITHIN THE
+                      HOUR) was extremely polite, professional, and fast.
+                      Immediately i told him my problems and from walking up my
+                      driveway to completing the work, 45min. He means business.
+                      I got the main line to my single family home snaked and my
+                      spout to the one of my bathrooms fixed.</p>
+                    <meta itemprop="datePublished" content="2026-02-21">
+                  </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-slide" style="padding:0 8px;"
+                  itemprop="review" itemscope
+                  itemtype="https://schema.org/Review">
+                  <div
+                    style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
+                    <div
+                      style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                      <div
+                        style="width:40px; height:40px; background:#16a34a; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">P</div>
+                      <div style="min-width:0;">
+                        <h4
+                          style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"
+                          itemprop="author">Phyllis Ratliff</h4>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                          <div style="color:#FBBC04;"><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i></div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <p class="review-text"
+                      style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;"
+                      itemprop="reviewBody">I was in need of having an emergency
+                      water cutoff Valve installed because mine was over 60
+                      year, corroded and under ground. The owner came himself
+                      and made the installation. He was professional, efficient,
+                      and extremely knowledgeable. Most importantly, he was very
+                      trustworthy and his pricing was fair and reasonable.</p>
+                    <meta itemprop="datePublished" content="2026-02-01">
+                  </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-slide" style="padding:0 8px;"
+                  itemprop="review" itemscope
+                  itemtype="https://schema.org/Review">
+                  <div
+                    style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
+                    <div
+                      style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                      <div
+                        style="width:40px; height:40px; background:#9333ea; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">F</div>
+                      <div style="min-width:0;">
+                        <h4
+                          style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"
+                          itemprop="author">Felicitas Mireles</h4>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                          <div style="color:#FBBC04;"><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i></div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <p class="review-text"
+                      style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;"
+                      itemprop="reviewBody">Around 11 pm, we discovered a severe
+                      shower leak that quickly escalated into an emergency. I
+                      promptly called their 24/7 emergency line, and they
+                      dispatched a technician immediately. Abdul was
+                      professional, courteous, and highly efficient. He swiftly
+                      resolved the complex leak. I highly recommend!</p>
+                    <meta itemprop="datePublished" content="2025-12-01">
+                  </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-slide" style="padding:0 8px;"
+                  itemprop="review" itemscope
+                  itemtype="https://schema.org/Review">
+                  <div
+                    style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
+                    <div
+                      style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                      <div
+                        style="width:40px; height:40px; background:#dc2626; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">B</div>
+                      <div style="min-width:0;">
+                        <h4
+                          style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"
+                          itemprop="author">Bri Alexis</h4>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                          <div style="color:#FBBC04;"><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i></div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <p class="review-text"
+                      style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;"
+                      itemprop="reviewBody">10/10 recommend Plumbing 24/7
+                      services! I called Abdul in need of his services to hook
+                      up my entire kitchen plumbing after construction and I
+                      couldn't be happier. Not only does he do great work, but
+                      he was very professional, clean, polite, fast and
+                      respectful.</p>
+                    <meta itemprop="datePublished" content="2025-12-01">
+                  </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="review-slide" style="padding:0 8px;"
+                  itemprop="review" itemscope
+                  itemtype="https://schema.org/Review">
+                  <div
+                    style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
+                    <div
+                      style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                      <div
+                        style="width:40px; height:40px; background:#ca8a04; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">H</div>
+                      <div style="min-width:0;">
+                        <h4
+                          style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"
+                          itemprop="author">Hershey Grogan</h4>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                          <div style="color:#FBBC04;"><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i></div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <p class="review-text"
+                      style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;"
+                      itemprop="reviewBody">I highly recommend Plumbing 24
+                      service! The plumber arrived exactly on time, quickly
+                      diagnosed the issue, and fixed it efficiently. They
+                      explained the repair clearly and the pricing was very
+                      reasonable—no hidden fees. Five stars!</p>
+                    <meta itemprop="datePublished" content="2025-12-01">
+                  </div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="review-slide" style="padding:0 8px;"
+                  itemprop="review" itemscope
+                  itemtype="https://schema.org/Review">
+                  <div
+                    style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
+                    <div
+                      style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                      <div
+                        style="width:40px; height:40px; background:#0d9488; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">T</div>
+                      <div style="min-width:0;">
+                        <h4
+                          style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"
+                          itemprop="author">Tanesha S.</h4>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                          <div style="color:#FBBC04;"><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i></div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <p class="review-text"
+                      style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;"
+                      itemprop="reviewBody">Extremely Fast response!!!! Had a
+                      plumbing emergency on a Sunday and it was resolved
+                      promptly and efficiently!!! Thank you!!! A+ affordable
+                      fast emergency plumbing service</p>
+                    <meta itemprop="datePublished" content="2026-01-01">
+                  </div>
+                </div>
+
+                <!-- Review 7 -->
+                <div class="review-slide" style="padding:0 8px;"
+                  itemprop="review" itemscope
+                  itemtype="https://schema.org/Review">
+                  <div
+                    style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
+                    <div
+                      style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                      <div
+                        style="width:40px; height:40px; background:#4f46e5; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">V</div>
+                      <div style="min-width:0;">
+                        <h4
+                          style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"
+                          itemprop="author">Veronica Castro</h4>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                          <div style="color:#FBBC04;"><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i></div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <p class="review-text"
+                      style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;"
+                      itemprop="reviewBody">I had an excellent experience with
+                      Plumbing 24 Service. They were extremely professional,
+                      punctual, and honest from start to finish. The technician
+                      explained everything clearly, worked efficiently, and made
+                      sure the problem was fully resolved before leaving.</p>
+                    <meta itemprop="datePublished" content="2025-12-01">
+                  </div>
+                </div>
+
+                <!-- Review 8 -->
+                <div class="review-slide" style="padding:0 8px;"
+                  itemprop="review" itemscope
+                  itemtype="https://schema.org/Review">
+                  <div
+                    style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
+                    <div
+                      style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                      <div
+                        style="width:40px; height:40px; background:#ea580c; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">N</div>
+                      <div style="min-width:0;">
+                        <h4
+                          style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"
+                          itemprop="author">Nitza Jusino</h4>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                          <div style="color:#FBBC04;"><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i></div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <p class="review-text"
+                      style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;"
+                      itemprop="reviewBody">I had Abdul come to my house on two
+                      separate occasions. The first time was for a kitchen sink
+                      installation. Not only did he help me pick the correct new
+                      faucet but he noticed the wood under the sink was rotting
+                      so he changed it. His prices are very fair.</p>
+                    <meta itemprop="datePublished" content="2025-12-01">
+                  </div>
+                </div>
+
+                <!-- Review 9 -->
+                <div class="review-slide" style="padding:0 8px;"
+                  itemprop="review" itemscope
+                  itemtype="https://schema.org/Review">
+                  <div
+                    style="background:#fff; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08); border:1px solid #f3f4f6; padding:20px; height:100%; aspect-ratio:4/3; display:flex; flex-direction:column;">
+                    <div
+                      style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                      <div
+                        style="width:40px; height:40px; background:#db2777; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px; flex-shrink:0;">D</div>
+                      <div style="min-width:0;">
+                        <h4
+                          style="font-weight:600; color:#1f2937; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"
+                          itemprop="author">David Faulknor</h4>
+                        <div style="display:flex; align-items:center; gap:4px;">
+                          <div style="color:#FBBC04;"><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i><i class="fas fa-star"
+                              style="font-size:12px;"></i></div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <p class="review-text"
+                      style="color:#4b5563; font-size:14px; line-height:1.6; margin:0; flex:1;"
+                      itemprop="reviewBody">Thank you Plumbing 24 Service for
+                      your fast response. Abdul was amazing and very
+                      knowledgeable, he explained to me the process of
+                      rebuilding my toilet and charged me fairly. 100% recommend
+                      them.</p>
+                    <meta itemprop="datePublished" content="2026-02-01">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Carousel Dots -->
+            <div id="reviews-dots"></div>
+          </div>
+
+          <!-- View All Button -->
+          <div style="text-align:center; margin-top:32px;">
+            <a href="https://share.google/jRJqJSjVYSRH5n5fN" target="_blank"
+              rel="noopener noreferrer"
+              style="display:inline-flex; align-items:center; background:#2563EB; color:#fff; font-weight:700; padding:12px 32px; border-radius:8px; text-decoration:none; transition:background-color 0.3s;"
+              title="Read all 36 Google reviews for Plumbing 24 Service Inc"
+              onmouseenter="this.style.backgroundColor='#1d4ed8'"
+              onmouseleave="this.style.backgroundColor='#2563EB'">
+              <i class="fab fa-google" style="margin-right:8px;"></i> Read All
+              36 Reviews on Google
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Area Map -->
+      <section class="py-16" id="service-area">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Our Service
+              Area in Broward County</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Proudly serving
+              Broward County & surrounding areas with 24/7 emergency plumbing
+              services</p>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229089.02674654808!2d-80.35!3d26.12!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a5a0e4472389%3A0x37b07a9ea4705baa!2sBroward%20County%2C%20FL!5e0!3m2!1sen!2sus!4v1689871234567!5m2!1sen!2sus"
+              style="width: 100%; border:0;" height="450" allowfullscreen
+              title="Google Map of Broward County Service Area"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="bg-blue-50 p-3 rounded-lg border border-blue-200">
+              <h3 class="font-bold text-blue-800">Broward County</h3>
+            </div>
+            <div class="bg-blue-50 p-3 rounded-lg border border-blue-200">
+              <h3 class="font-bold text-blue-800">Pompano Beach</h3>
+            </div>
+            <div class="bg-blue-50 p-3 rounded-lg border border-blue-200">
+              <h3 class="font-bold text-blue-800">Boca Raton</h3>
+            </div>
+            <div class="bg-blue-50 p-3 rounded-lg border border-blue-200">
+              <h3 class="font-bold text-blue-800">West Palm Beach</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-16 bg-blue-800 text-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+            <p class="text-xl max-w-2xl mx-auto">We're here 24/7 to assist with
+              all your plumbing needs in Broward County</p>
+            <div class="w-24 h-1 bg-white mx-auto mt-4"></div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row gap-8">
+            <div class="lg:w-1/2">
+              <div class="bg-white/10 rounded-lg p-8 h-full">
+                <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+
+                <div class="space-y-6">
+                  <div class="flex items-start">
+                    <div
+                      class="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                      <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold">Phone</h4>
+                      <a href="tel:9546640144"
+                        class="text-lg hover:underline"
+                        title="Call Plumbing 24 Service Inc"
+                        onclick="return gtag_report_conversion('tel:9546640144')">
+                        (954) 664-0144</a>
+                      <p class="text-blue-200 text-sm">24/7 Emergency
+                        Service</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div
+                      class="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold">Email</h4>
+                      <a href="mailto:contact@plumbing24service.com"
+                        title="Email Plumbing 24 Service Inc"
+                        class="hover:underline">contact@plumbing24service.com</a>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div
+                      class="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                      <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold">Hours</h4>
+                      <p>24/7 Emergency Service</p>
+                      <p class="text-blue-200 text-sm">Regular Hours: Mon-Sun 8
+                        am-8 pm</p>
+                      <p class="text-blue-200 text-sm">After Hours: Emergencies
+                        Only</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:w-1/2">
+              <div class="bg-white rounded-lg p-8 h-full">
+                <h3 class="text-2xl font-bold text-blue-800 mb-6">Request a Free
+                  Estimate</h3>
+                <form class="space-y-4" id="contact-form-bottom">
+                  <div>
+                    <label for="name-bottom"
+                      class="block text-gray-700 font-medium mb-1"><i
+                        class="fas fa-user text-blue-500"
+                        style="margin-right:6px; font-size:13px;"></i>Your
+                      Name <span style="color:#dc2626;">*</span></label>
+                    <input type="text" id="name-bottom" name="from_name"
+                      required
+                      placeholder="John Doe"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
+                  </div>
+                  <div>
+                    <label for="email-bottom"
+                      class="block text-gray-700 font-medium mb-1"><i
+                        class="fas fa-envelope text-blue-500"
+                        style="margin-right:6px; font-size:13px;"></i>Email
+                      Address <span style="color:#dc2626;">*</span></label>
+                    <input type="email" id="email-bottom" name="from_email"
+                      required
+                      placeholder="you@example.com"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
+                  </div>
+                  <div>
+                    <label for="phone-bottom"
+                      class="block text-gray-700 font-medium mb-1"><i
+                        class="fas fa-phone text-blue-500"
+                        style="margin-right:6px; font-size:13px;"></i>Phone
+                      Number</label>
+                    <input type="tel" id="phone-bottom" name="phone"
+                      placeholder="(954) 555-0123"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
+                  </div>
+                  <div>
+                    <label for="service-bottom"
+                      class="block text-gray-700 font-medium mb-1"><i
+                        class="fas fa-wrench text-blue-500"
+                        style="margin-right:6px; font-size:13px;"></i>Service
+                      Needed</label>
+                    <select id="service-bottom" name="service"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 cursor-pointer">
+                      <option disabled selected>Select Service</option>
+                      <option>Emergency Plumbing</option>
+                      <option>Drain Cleaning</option>
+                      <option>Water Heater Repair</option>
+                      <option>Toilet Repair</option>
+                      <option>Pipe Repair</option>
+                      <option>Other Service</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="message-bottom"
+                      class="block text-gray-700 font-medium mb-1">Message <span
+                        style="color:#dc2626;">*</span></label>
+                    <textarea id="message-bottom" name="message" rows="4"
+                      required
+                      placeholder="How can we help you?"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"></textarea>
+                  </div>
+                  <!-- Anti-spam honeypot -->
+                  <input type="text" name="_honey" style="display:none">
+                  <button type="submit"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 cursor-pointer">
+                    Send Message
+                  </button>
+                  <p
+                    style="font-size:12px; color:#9ca3af; text-align:center; margin-top:8px;"><i
+                      class="fas fa-lock" style="margin-right:4px;"></i>Your
+                    information is secure and will not be shared.</p>
+                </form>
+                <div id="toast-success-bottom"
+                  class="fixed top-28 right-8 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+                  <i class="fas fa-check-circle mr-2"></i>Message sent
+                  successfully!
+                </div>
+                <div id="toast-error-bottom"
+                  class="fixed top-28 right-8 bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+                  <i class="fas fa-exclamation-circle mr-2"></i><span>Failed to
+                    send message. Please try again.</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Blog Section -->
+          <section id="blog" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+              <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Plumbing Tips
+                  &
+                  News</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Helpful
+                  articles
+                  about plumbing maintenance and common issues in Broward
+                  County</p>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <!-- Blog Post -->
           <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg" data-category="Maintenance">
@@ -1377,147 +1823,167 @@
     </div>
   </div></div>
         <div class="text-center mt-10">
-              <a href="blogs.html"
-                class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
-                title="View All Plumbing Articles">
-                View All Articles
-              </a>
+                <a href="blogs.html"
+                  class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                  title="View All Plumbing Articles">
+                  View All Articles
+                </a>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="py-16">
-          <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-              <h2 class="text-3xl font-bold text-blue-800 mb-4">Frequently Asked
-                Questions</h2>
-              <p class="text-lg text-gray-600 max-w-2xl mx-auto">Answers to
-                common
-                plumbing questions from Broward County homeowners</p>
-              <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
-            </div>
+          <!-- FAQ Section -->
+          <section id="faq" class="py-16">
+            <div class="container mx-auto px-4">
+              <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Frequently
+                  Asked
+                  Questions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Answers to
+                  common
+                  plumbing questions from Broward County homeowners</p>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+              </div>
 
-            <div class="max-w-3xl mx-auto">
-              <!-- FAQ Items -->
-              <div class="space-y-4">
-                <!-- FAQ Item 1 -->
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                  <button
-                    class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
-                    <span>What areas in Broward County do you serve?</span>
-                    <i class="fas fa-plus text-blue-600"></i>
-                  </button>
-                  <div class="accordion-content bg-white px-4">
-                    <p class="text-gray-700 py-4">We provide plumbing services
-                      throughout all of Broward County and the surrounding areas,
-                      including
-                      Fort Lauderdale, Hollywood, Pembroke Pines, Miramar, Coral Springs,
-                      Pompano Beach, Davie, Plantation, Sunrise, Tamarac, and Weston. Our team is available 24/7 for
-                      emergency plumbing services anywhere in the Greater Broward County
-                      area.
-                    </p>
+              <div class="max-w-3xl mx-auto">
+                <!-- FAQ Items -->
+                <div class="space-y-4">
+                  <!-- FAQ Item 1 -->
+                  <div
+                    class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button
+                      class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
+                      <span>What areas in Broward County do you serve?</span>
+                      <i class="fas fa-plus text-blue-600"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-4">
+                      <p class="text-gray-700 py-4">We provide plumbing services
+                        throughout all of Broward County and the surrounding
+                        areas,
+                        including
+                        Fort Lauderdale, Hollywood, Pembroke Pines, Miramar,
+                        Coral Springs,
+                        Pompano Beach, Davie, Plantation, Sunrise, Tamarac, and
+                        Weston. Our team is available 24/7 for
+                        emergency plumbing services anywhere in the Greater
+                        Broward County
+                        area.
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                <!-- FAQ Item 2 -->
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                  <button
-                    class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
-                    <span>How quickly can you respond to a plumbing
-                      emergency?</span>
-                    <i class="fas fa-plus text-blue-600"></i>
-                  </button>
-                  <div class="accordion-content bg-white px-4">
-                    <p class="text-gray-700 py-4">For emergency plumbing
-                      situations
-                      like burst pipes, severe leaks, or sewage backups, we
-                      typically respond within 1-2 hours in the Broward County area.
-                      We
-                      have multiple teams on call 24/7 to ensure fast response
-                      times
-                      when you need us most.</p>
+                  <!-- FAQ Item 2 -->
+                  <div
+                    class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button
+                      class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
+                      <span>How quickly can you respond to a plumbing
+                        emergency?</span>
+                      <i class="fas fa-plus text-blue-600"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-4">
+                      <p class="text-gray-700 py-4">For emergency plumbing
+                        situations
+                        like burst pipes, severe leaks, or sewage backups, we
+                        typically respond within 1-2 hours in the Broward County
+                        area.
+                        We
+                        have multiple teams on call 24/7 to ensure fast response
+                        times
+                        when you need us most.</p>
+                    </div>
                   </div>
-                </div>
 
-                <!-- FAQ Item 3 -->
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                  <button
-                    class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
-                    <span>Do you offer free estimates for plumbing work?</span>
-                    <i class="fas fa-plus text-blue-600"></i>
-                  </button>
-                  <div class="accordion-content bg-white px-4">
-                    <p class="text-gray-700 py-4">Yes, we provide free,
-                      no-obligation estimates for all plumbing services in 
-                      Broward County and surroundings. For emergency situations, we'll give you an
-                      estimate
-                      before beginning any work. For non-emergency projects, we
-                      can
-                      provide estimates over the phone or schedule an in-home
-                      consultation.</p>
+                  <!-- FAQ Item 3 -->
+                  <div
+                    class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button
+                      class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
+                      <span>Do you offer free estimates for plumbing
+                        work?</span>
+                      <i class="fas fa-plus text-blue-600"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-4">
+                      <p class="text-gray-700 py-4">Yes, we provide free,
+                        no-obligation estimates for all plumbing services in
+                        Broward County and surroundings. For emergency
+                        situations, we'll give you an
+                        estimate
+                        before beginning any work. For non-emergency projects,
+                        we
+                        can
+                        provide estimates over the phone or schedule an in-home
+                        consultation.</p>
+                    </div>
                   </div>
-                </div>
 
-                <!-- FAQ Item 4 -->
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                  <button
-                    class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
-                    <span>What payment methods do you accept?</span>
-                    <i class="fas fa-plus text-blue-600"></i>
-                  </button>
-                  <div class="accordion-content bg-white px-4">
-                    <p class="text-gray-700 py-4">We accept all major credit
-                      cards
-                      (Visa, Mastercard, American Express, Discover), checks,
-                      and
-                      cash. We also offer financing options for larger plumbing
-                      projects in Broward County through trusted third-party
-                      providers.</p>
+                  <!-- FAQ Item 4 -->
+                  <div
+                    class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button
+                      class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
+                      <span>What payment methods do you accept?</span>
+                      <i class="fas fa-plus text-blue-600"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-4">
+                      <p class="text-gray-700 py-4">We accept all major credit
+                        cards
+                        (Visa, Mastercard, American Express, Discover), checks,
+                        and
+                        cash. We also offer financing options for larger
+                        plumbing
+                        projects in Broward County through trusted third-party
+                        providers.</p>
+                    </div>
                   </div>
-                </div>
 
-                <!-- FAQ Item 5 -->
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                  <button
-                    class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
-                    <span>Why should I choose Plumbing 24 Service?</span>
-                    <i class="fas fa-plus text-blue-600"></i>
-                  </button>
-                  <div class="accordion-content bg-white px-4">
-                    <p class="text-gray-700 py-4">We are a trusted plumbing company
-                      with a 5-star rating on Google from 36+ satisfied customers.
-                      Our team brings years of experience, transparent pricing,
-                      and a commitment to quality workmanship. We serve all of
-                      Broward County and surrounding areas with 24/7 emergency
-                      availability.</p>
+                  <!-- FAQ Item 5 -->
+                  <div
+                    class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button
+                      class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
+                      <span>Why should I choose Plumbing 24 Service?</span>
+                      <i class="fas fa-plus text-blue-600"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-4">
+                      <p class="text-gray-700 py-4">We are a trusted plumbing
+                        company
+                        with a 5-star rating on Google from 36+ satisfied
+                        customers.
+                        Our team brings years of experience, transparent
+                        pricing,
+                        and a commitment to quality workmanship. We serve all of
+                        Broward County and surrounding areas with 24/7 emergency
+                        availability.</p>
+                    </div>
                   </div>
-                </div>
 
-                <!-- FAQ Item 6 -->
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                  <button
-                    class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
-                    <span>What's included in your lifetime warranty?</span>
-                    <i class="fas fa-plus text-blue-600"></i>
-                  </button>
-                  <div class="accordion-content bg-white px-4">
-                    <p class="text-gray-700 py-4">Our lifetime warranty covers
-                      all
-                      parts and labor for repairs we perform on your Broward County
-                      home's plumbing system. If any issue recurs due to our
-                      workmanship, we'll repair it at no cost to you. This
-                      doesn't
-                      cover new problems or damage caused by neglect, but
-                      demonstrates our commitment to quality.</p>
+                  <!-- FAQ Item 6 -->
+                  <div
+                    class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button
+                      class="accordion-btn flex justify-between items-center w-full text-left font-bold text-lg text-blue-800 p-4 hover:bg-gray-50 focus:outline-none cursor-pointer">
+                      <span>What's included in your lifetime warranty?</span>
+                      <i class="fas fa-plus text-blue-600"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-4">
+                      <p class="text-gray-700 py-4">Our lifetime warranty covers
+                        all
+                        parts and labor for repairs we perform on your Broward
+                        County
+                        home's plumbing system. If any issue recurs due to our
+                        workmanship, we'll repair it at no cost to you. This
+                        doesn't
+                        cover new problems or damage caused by neglect, but
+                        demonstrates our commitment to quality.</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-    </main>
+        </main>
 
         <!-- Footer -->
         <footer class="bg-gray-900 text-white pt-16 pb-8">
@@ -1528,7 +1994,8 @@
                 alt="Plumbing 24 Service Inc Logo" class="h-48 w-48 mb-6">
               <h3 class="text-3xl font-bold text-center">Plumbing 24 Service
                 Inc</h3>
-              <p class="mt-4 mb-6 text-gray-400 max-w-2xl text-center">Professional
+              <p
+                class="mt-4 mb-6 text-gray-400 max-w-2xl text-center">Professional
                 plumbing services
                 for Broward County homes and businesses. <br>Fast response and
                 affordable
@@ -1562,10 +2029,10 @@
                   <i class="fas fa-map-marker-alt"></i>
                 </a>
                 <a
-                    href="https://www.mapquest.com/us/florida/plumbing-24-service-792031157"
-                    class="text-gray-400 hover:text-gray-200 transition"
-                    title="Find Plumbing 24 Service Inc on MapQuest">
-                    <i class="fas fa-map"></i>
+                  href="https://www.mapquest.com/us/florida/plumbing-24-service-792031157"
+                  class="text-gray-400 hover:text-gray-200 transition"
+                  title="Find Plumbing 24 Service Inc on MapQuest">
+                  <i class="fas fa-map"></i>
                 </a>
               </div>
             </div>
@@ -1638,13 +2105,9 @@
                   <li class="flex items-start">
                     <i class="fas fa-phone-alt mt-1 mr-3 text-blue-600"></i>
                     <a href="tel:9546640144" class="hover:underline"
-                      title="Call Plumbing 24 Service Inc">
+                      title="Call Plumbing 24 Service Inc"
+                      onclick="return gtag_report_conversion('tel:9546640144')">
                       (954) 664-0144</a>
-                  </li>
-                  <li class="flex items-start">
-                    <i
-                      class="fas fa-map-marker-alt mt-1 mr-3 text-blue-600"></i>
-                    <span>5311 NW 44th Ave Tamarac, FL 33319</span>
                   </li>
                   <li class="flex items-start">
                     <i class="fas fa-envelope mt-1 mr-3 text-blue-600"></i>
@@ -1668,11 +2131,13 @@
             <div
               class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
               <p>© 2025 Plumbing 24 Service Inc. All rights reserved.</p>
-                <div class="mt-2 text-sm">
-                  <a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
-                  <span class="mx-2">|</span>
-                  <a href="terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
-                </div>
+              <div class="mt-2 text-sm">
+                <a href="privacy-policy.html"
+                  class="hover:text-white transition">Privacy Policy</a>
+                <span class="mx-2">|</span>
+                <a href="terms-of-service.html"
+                  class="hover:text-white transition">Terms of Service</a>
+              </div>
             </div>
           </footer>
 
@@ -1685,6 +2150,7 @@
 
           <a href="tel:9546640144" id="mobile-call-button"
             title="Call Our Emergency Plumbing Service Now"
+            onclick="return gtag_report_conversion('tel:9546640144')"
             class="fixed bottom-10 right-6 bg-green-600 hover:bg-green-700 text-white w-16 h-16 rounded-full shadow-lg z-50 hidden md:hidden flex items-center justify-center">
             <i class="fas fa-phone-alt text-3xl"></i>
           </a>
@@ -1774,6 +2240,6 @@
             handleFormSubmission('contact-form-bottom', 'toast-success-bottom', 'toast-error-bottom');
         });
       </script>
-      <script src="js/carousel.js?v=2"></script>
+          <script src="js/carousel.js?v=2"></script>
         </body>
       </html>

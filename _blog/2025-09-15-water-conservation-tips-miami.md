@@ -15,7 +15,7 @@ In Broward County's tropical climate, water conservation isn't just about saving
 
 ## Why Water Conservation Matters in Broward County
 
-Miami-Dade County's unique ecosystem faces several water challenges:
+Broward County's unique ecosystem faces several water challenges:
 - Saltwater intrusion into freshwater aquifers
 - High water demand during dry seasons
 - Aging water infrastructure
@@ -55,7 +55,7 @@ A single dripping faucet can waste over 3,000 gallons per year. Common leak sour
 - Install a smart irrigation controller
 - Use drip irrigation for plant beds
 - Adjust sprinklers to avoid watering pavement
-- Follow Miami-Dade County's year-round water restrictions
+- Follow Broward County's year-round water restrictions
 
 ### 3. Pool Maintenance
 - Cover your pool when not in use (reduces evaporation by 90%)
@@ -91,7 +91,7 @@ A single dripping faucet can waste over 3,000 gallons per year. Common leak sour
 
 ### 1. Install a Rain Barrel
 - Capture rainwater for irrigation
-- Miami-Dade County offers rebates for approved rain barrel installations
+- Broward County offers rebates for approved rain barrel installations
 - Reduces stormwater runoff and pollution
 
 ### 2. Gray Water Systems
@@ -106,7 +106,7 @@ A single dripping faucet can waste over 3,000 gallons per year. Common leak sour
 
 ## Broward County-Specific Conservation Programs
 
-### 1. Miami-Dade Water and Sewer Department Rebates
+### 1. Broward County Water and Sewer Department Rebates
 - High-efficiency toilet rebates
 - Rain barrel rebates
 - Smart irrigation controller rebates

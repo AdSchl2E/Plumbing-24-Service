@@ -170,7 +170,7 @@ posts.forEach(post => {
 
   // If no professional tip, create a generic one
   if (!tipContent) {
-    tipContent = `<p>Consider flushing your water heater annually to remove sediment buildup. This simple maintenance step can significantly extend the life of your unit and improve energy efficiency. For homes with hard water in Miami, we recommend installing a water softener to reduce mineral deposits and protect all your plumbing fixtures, not just your water heater.</p>`;
+    tipContent = `<p>Consider flushing your water heater annually to remove sediment buildup. This simple maintenance step can significantly extend the life of your unit and improve energy efficiency. For homes with hard water in Broward County, we recommend installing a water softener to reduce mineral deposits and protect all your plumbing fixtures, not just your water heater.</p>`;
   }
 
   // Get related articles
@@ -183,9 +183,14 @@ posts.forEach(post => {
     day: 'numeric'
   });
 
+  // Format ISO date for structured data
+  const isoDate = new Date(post.date).toISOString().split('T')[0];
+
   // Replace template placeholders with English content
   let postHtml = blogTemplate
     // Fix title and meta tags
+    .replace(/ARTICLE_SLUG/g, post.slug)
+    .replace(/PUBLISHED_DATE_ISO/g, isoDate)
     .replace(/ARTICLE_TITLE/g, `${post.title}`)
     .replace(/alt="ARTICLE_TITLE"/g, `alt="${post.title}"`)
     .replace(/<h1 class="text-3xl font-bold text-blue-800 mb-4">ARTICLE<\/_TITLEh1>/g,
@@ -538,7 +543,6 @@ const llmsContent = `# Plumbing 24 Service Inc
 - **Name:** Plumbing 24 Service Inc
 - **Phone:** (954) 664-0144
 - **Email:** contact@plumbing24service.com
-- **Address:** 5311 NW 44th Ave, Tamarac, FL 33319
 - **Hours:** 24/7 — Available day and night, weekends and holidays
 - **Service Area:** Broward County and surrounding areas (Tamarac, Fort Lauderdale, Coral Springs, Plantation, Pembroke Pines, Hollywood, Sunrise, Davie, Miramar, Pompano Beach, Deerfield Beach, Coconut Creek)
 - **Rating:** 5.0/5.0 (36 Google reviews)
