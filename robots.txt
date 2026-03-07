@@ -1,14 +1,16 @@
 # Robots.txt for Plumbing 24 Service Inc
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+Disallow: /*?*
+Crawl-delay: 5
 
-# Explicitly allow AI crawlers
-User-agent: GPTBot
-Allow: /
+# Sitemaps
+Sitemap: https://plumbing24service.com/sitemap.xml
 
-User-agent: ChatGPT-User
-Allow: /
-
+# Allow major search engines
 User-agent: Googlebot
 Allow: /
 
@@ -18,5 +20,37 @@ Allow: /
 User-agent: Baiduspider
 Allow: /
 
-# Sitemap
-Sitemap: https://plumbing24service.com/sitemap.xml
+# Allow AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Block unwanted bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

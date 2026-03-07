@@ -445,11 +445,13 @@ try {
 console.log('Generating sitemap.xml...');
 const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format
 
+const DOMAIN = 'https://plumbing24service.com';
+
 let sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://plumbing24serviceinc.com/</loc>
+    <loc>${DOMAIN}/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -457,10 +459,24 @@ let sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
   
   <!-- Main Pages -->  
   <url>
-    <loc>https://plumbing24serviceinc.com/blogs.html</loc>
+    <loc>${DOMAIN}/blogs.html</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>${DOMAIN}/privacy-policy.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>${DOMAIN}/terms-of-service.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 `;
 
@@ -469,7 +485,7 @@ posts.forEach(post => {
   const postDate = new Date(post.date).toISOString().split('T')[0];
   sitemapContent += `  
   <url>
-    <loc>https://plumbing24serviceinc.com/blogs/${post.slug}.html</loc>
+    <loc>${DOMAIN}/blogs/${post.slug}.html</loc>
     <lastmod>${postDate}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
@@ -490,7 +506,7 @@ const servicePages = [
 servicePages.forEach(service => {
   sitemapContent += `  
   <url>
-    <loc>https://plumbing24serviceinc.com/services/${service}.html</loc>
+    <loc>${DOMAIN}/services/${service}.html</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -503,3 +519,52 @@ sitemapContent += `</urlset>`;
 // Write sitemap to file
 fs.writeFileSync(path.join(__dirname, '../sitemap.xml'), sitemapContent);
 console.log('Sitemap generated successfully!');
+
+// Update llms.txt with full business info + dynamic blog articles
+const llmsPath = path.join(__dirname, '../llms.txt');
+
+// Generate blog articles list
+let blogArticlesList = '';
+posts.forEach(post => {
+  blogArticlesList += `- [${post.title}](${DOMAIN}/blogs/${post.slug}.html): ${post.excerpt}\n`;
+});
+
+const llmsContent = `# Plumbing 24 Service Inc
+
+> 24/7 emergency plumbing services in Broward County, Florida. Expert plumber for residential and commercial repairs, installations, and maintenance.
+
+## Business Information
+
+- **Name:** Plumbing 24 Service Inc
+- **Phone:** (954) 664-0144
+- **Email:** contact@plumbing24service.com
+- **Address:** 5311 NW 44th Ave, Tamarac, FL 33319
+- **Hours:** 24/7 — Available day and night, weekends and holidays
+- **Service Area:** Broward County and surrounding areas (Tamarac, Fort Lauderdale, Coral Springs, Plantation, Pembroke Pines, Hollywood, Sunrise, Davie, Miramar, Pompano Beach, Deerfield Beach, Coconut Creek)
+- **Rating:** 5.0/5.0 (36 Google reviews)
+- **Website:** ${DOMAIN}
+
+## Services
+
+- [Emergency Plumbing](${DOMAIN}/services/emergency-plumbing.html): 24/7 immediate response to burst pipes, leaks, floods, and plumbing emergencies
+- [Drain Cleaning](${DOMAIN}/services/drain-cleaning.html): Clogged drains, sinks, toilets & sewer lines using hydro jetting & advanced tools
+- [Water Heater Services](${DOMAIN}/services/water-heater-services.html): Tank & tankless installation, repair, maintenance & replacement
+- [Toilet Repair & Installation](${DOMAIN}/services/toilet-repair.html): Fix leaks, clogs, running toilets, and high-efficiency toilet installation
+- [Pipe Repair & Replacement](${DOMAIN}/services/pipe-repair.html): Fix leaks, burst pipes, and corroded lines
+- [Commercial Plumbing](${DOMAIN}/services/commercial-plumbing.html): Restaurants, retail, offices, medical facilities — code-compliant installation, repair & maintenance
+
+## Blog Articles
+
+${blogArticlesList}
+## Key Features
+
+- Same-day service available
+- Lifetime warranty on repairs
+- Licensed and insured
+- Free estimates
+- Residential and commercial services
+- Bilingual service (English & Spanish)
+`;
+
+fs.writeFileSync(llmsPath, llmsContent);
+console.log('LLMS file updated successfully!');
