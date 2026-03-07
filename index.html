@@ -1772,15 +1772,6 @@
             // Initialize both forms
             handleFormSubmission('contact-form', 'toast-success', 'toast-error');
             handleFormSubmission('contact-form-bottom', 'toast-success-bottom', 'toast-error-bottom');
-
-            // Reload on breakpoint change for background image
-            let resizeTimeout;
-            window.addEventListener('resize', () => {
-                clearTimeout(resizeTimeout);
-                resizeTimeout = setTimeout(() => {
-                    if ((window.innerWidth < 768) !== isMobile) location.reload();
-                }, 250);
-            });
         });
       </script>
       <script src="js/carousel.js?v=2"></script>
