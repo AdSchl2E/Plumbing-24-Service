@@ -454,6 +454,9 @@
   .w-full {
     width: 100%;
   }
+  .min-w-12 {
+    min-width: calc(var(--spacing) * 12);
+  }
   .max-w-2xl {
     max-width: var(--container-2xl);
   }
