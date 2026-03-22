@@ -545,7 +545,7 @@ const llmsContent = `# Plumbing 24 Service Inc
 - **Email:** contact@plumbing24service.com
 - **Hours:** 24/7 — Available day and night, weekends and holidays
 - **Service Area:** Broward County and surrounding areas (Tamarac, Fort Lauderdale, Coral Springs, Plantation, Pembroke Pines, Hollywood, Sunrise, Davie, Miramar, Pompano Beach, Deerfield Beach, Coconut Creek)
-- **Rating:** 5.0/5.0 (36 Google reviews)
+- **Rating:** 5.0/5.0 (42 Google reviews)
 - **Website:** ${DOMAIN}
 
 ## Services
